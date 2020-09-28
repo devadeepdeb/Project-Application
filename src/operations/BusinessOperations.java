@@ -13,18 +13,24 @@ public class BusinessOperations implements FileInterface {
 
 	List<String> r = new ArrayList<String>();
 	File directory = new File("C:\\Users\\HP\\FSD-Phase1-Project\\Project-Application");
-	File[] files = new File("C:\\Users\\HP\\FSD-Phase1-Project\\Project-Application").listFiles();
+	File[] files = directory.listFiles();
 	
 	@Override
 	public void showAllFiles() {
 		// TODO Auto-generated method stub
 		System.out.println("-------------------------------------------------------------------------------");
 		System.out.println("All files names available in ["+directory+"] directory are as follows: \n");
-		for (File file : files) {
-			if (file.isFile()) {
-				r.add(file.getName());
+		try {
+			for (File file : files) {
+				if (file.isFile()) {
+					r.add(file.getName());
+				}
+				System.out.println(file.getName());
 			}
-			System.out.println(file.getName());
+			
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+			System.out.println(directory+" is incorrect File Directory to proceed with Business Level Operations");
 		}
 	}
 
@@ -63,6 +69,7 @@ public class BusinessOperations implements FileInterface {
 		String fileName=sc3.nextLine();
         File[] files=directory.listFiles();
         int flag=0;
+        try {
         for (File file : files) {
         	String name = file.getName();
         	if (name.equals(fileName)) {
@@ -70,6 +77,10 @@ public class BusinessOperations implements FileInterface {
         		System.out.println("The filename "+fileName+" is deleted from the directory");
         		flag=1;
 			}
+		}
+        } catch (NullPointerException e) {
+			// TODO: handle exception
+        	System.out.println(directory+" is incorrect File Directory to proceed with Deletion");
 		}
 		try {
 			if (flag==0) {
@@ -91,6 +102,7 @@ public class BusinessOperations implements FileInterface {
 		String fileName=sc4.nextLine();
         File[] files=directory.listFiles();
         int flag=0;
+        try {
         for (File file : files) {
         	String name = file.getName();
         	if (name.equals(fileName)) {
@@ -105,6 +117,10 @@ public class BusinessOperations implements FileInterface {
 				sc5.close();
 			}
 		}
+	} catch (NullPointerException e) {
+		// TODO: handle exception
+		System.out.println(directory+" is incorrect File Directory to proceed with Searching");
+	}
         try {
 			if (flag==0) {
 				System.out.println("File is not there");
@@ -114,6 +130,4 @@ public class BusinessOperations implements FileInterface {
 			sc4.close();
 		}
 	}
-
-	
 }
