@@ -1,6 +1,5 @@
 package operations;
 
-import java.awt.Desktop;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -43,11 +42,26 @@ public class BusinessOperations implements FileInterface {
 		String filename=sc2.nextLine();
 		File F= new File(directory,filename);
 		try {
-			if (!F.exists() || !F.getCanonicalFile().getName().equals(F.getName())) {
+			//F.getCanonicalFile().getName().equals(F.getName() will ignore case-sensitivity for same file names, and will get added only in Linux and not in Windows
+			if ((!F.exists() && F.getName().endsWith(".txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".txt")) || 
+					(!F.exists() && F.getName().endsWith(".Txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".Txt")) ||
+					(!F.exists() && F.getName().endsWith(".TXt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".TXt")) ||
+					(!F.exists() && F.getName().endsWith(".TXT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".TXT")) ||
+					(!F.exists() && F.getName().endsWith(".tXT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".tXT")) ||
+					(!F.exists() && F.getName().endsWith(".txT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".txT"))) {
 			F.createNewFile();
 				System.out.println(filename+" file is added to the directory");
-				Desktop.getDesktop().edit(F);
-			} else {
+				//Desktop.getDesktop().edit(F); This will only work in Windows not in Linux
+			} 
+			else if ((!F.exists() && !F.getName().endsWith(".txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".txt")) || 
+					(!F.exists() && !F.getName().endsWith(".Txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".Txt")) ||
+					(!F.exists() && !F.getName().endsWith(".TXt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".TXt")) ||
+					(!F.exists() && !F.getName().endsWith(".TXT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".TXT")) ||
+					(!F.exists() && !F.getName().endsWith(".tXT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".tXT")) ||
+					(!F.exists() && !F.getName().endsWith(".txT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".txT"))) {
+				System.out.println("Please enter .txt file");
+			}
+			else {
 				//if (F.exists() || F.getCanonicalFile().getName().equals(F.getName()))
 				System.out.println("This file is already there");
 			}
