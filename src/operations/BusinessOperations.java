@@ -67,7 +67,7 @@ public class BusinessOperations implements FileInterface {
 			}
 		} catch (IOException e) {
 			// TODO: handle exception
-			System.out.println("You cannot add content to "+filename+" in the directory. Either it is not a text (.txt) format file or ["+directory+"] directory is invalid to add file.");
+			System.out.println("You cannot add content to "+filename+" in the directory.["+directory+"] directory is invalid to add file.");
 		}
 		  catch (NoSuchElementException e) {
 			// TODO: handle exception
