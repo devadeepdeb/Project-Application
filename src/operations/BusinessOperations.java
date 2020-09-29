@@ -41,24 +41,25 @@ public class BusinessOperations implements FileInterface {
 		System.out.println("Enter the text format file (.txt) name which you want to add in ["+directory+"] directory:");
 		Scanner sc2=new Scanner(System.in);
 		String filename=sc2.nextLine();
-		File F= new File(filename);
+		File F= new File(directory,filename);
 		try {
-			if (F.createNewFile()) {
+			if (!F.exists() || !F.getCanonicalFile().getName().equals(F.getName())) {
+			F.createNewFile();
 				System.out.println(filename+" file is added to the directory");
 				Desktop.getDesktop().edit(F);
 			} else {
-
+				//if (F.exists() || F.getCanonicalFile().getName().equals(F.getName()))
 				System.out.println("This file is already there");
 			}
 		} catch (IOException e) {
 			// TODO: handle exception
-			System.out.println("You cannot add content to "+filename+" in the directory as it is not a text (.txt) format file. Please delete it if you wish from Business level operation menu");
+			System.out.println("You cannot add content to "+filename+" in the directory. Either it is not a text (.txt) format file or ["+directory+"] directory is invalid to add file.");
 		}
 		  catch (NoSuchElementException e) {
 			// TODO: handle exception
 			  sc2.close();
 		}
-	}
+		}
 
 	@Override
 	public void deleteFile() {
@@ -108,7 +109,7 @@ public class BusinessOperations implements FileInterface {
         	if (name.equals(fileName)) {
         		System.out.println("The filename "+fileName+" is present in the directory and its contents are");
                 System.out.println("-------------------------------------------------------------------------------");
-				File f= new File(fileName);
+				File f= new File(directory,fileName);
 				Scanner sc5 = new Scanner(f);
 				while (sc5.hasNextLine()) {
 					System.out.println(sc5.nextLine());
