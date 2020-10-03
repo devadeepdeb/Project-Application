@@ -15,3 +15,6 @@ LockedMe
 <p>Option to search a user specified file from the application</p>
 <p>Navigation option to close the current execution context and return to the main context</p>
 <img src="Images/2.PNG">
+<h1>Output 3</h1>
+<p>Option to add a user specified file to the application and add contents to it.(Desktop.getDesktop().edit(file) opens the file for adding content on Notepad. It only works in Windows and not in linux OS).</p>
+<img src="Images/3.PNG">
