@@ -18,3 +18,11 @@ LockedMe
 <h1>Output 3</h1>
 <p>Option to add a user specified file to the application and add contents to it.(Desktop.getDesktop().edit(file) opens the file for adding content on Notepad. It only works in Windows and not in linux OS).</p>
 <img src="Images/3.PNG">
+<h1>Output 4</h1>
+<p>Delete a user specified file from the existing directory list</p>
+<img src="Images/4.PNG">
+<h1>Output 5</h1>
+<p>Search a user specified file from the main directory</p>
+<p>Displayed the result upon successful operation</p>
+<p>Displayed the result upon unsuccessful operation</p>
+<img src="Images/5.PNG">
