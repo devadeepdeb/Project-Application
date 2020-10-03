@@ -56,5 +56,7 @@ LockedMe
 <img src="Flowchart.PNG">
 <h1>Core Concepts</h1>
 <p>IDE : Eclipse Oxygen</p>
-<p>Java Version: 1.8</p>
-<p>Javs Concepts Used: Files, List, ArrayList, Interface, Static, Exception, If-else, Switch, Do-while, Scanner, Class, Function, Packages</p>
+<p>Java Compiler Version: 1.8</p>
+<p>Java Concepts Used: Files, List, ArrayList, Interface, Static, Exception, If-else, Switch, Do-while, Scanner, Class, Function, Packages</p>
+<h1>Conclusion</h1>
+<p>Application can be enhanced further if it accepts user inputs to create directory to perform Business Operations rather than using hardcoded Root directory.</p>
