@@ -32,3 +32,5 @@ LockedMe
 <h1>Output 7</h1>
 <p>Third option to close the main application</p>
 <img src="Images/7.PNG">
+<h1>Application Flowchart</h1>
+<img src="Flowchart.PNG">
