@@ -13,11 +13,9 @@ public class AppMain {
 			AppMenu.menuDriven();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
 		  catch (NoSuchElementException e) {
 			// TODO: handle exception
-			  
 		}
 	}
 

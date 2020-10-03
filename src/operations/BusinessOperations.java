@@ -11,13 +11,14 @@ import java.util.Scanner;
 public class BusinessOperations implements FileInterface {
 
 	List<String> r = new ArrayList<String>();
-	File directory = new File("C:\\Users\\HP\\FSD-Phase1-Project\\Project-Application");
+	File directory = new File("C:\\Users\\HP\\FSD-Phase1-Project\\Project-Application\\Root");
 	File[] files = directory.listFiles();
 	
 	@Override
 	public void showAllFiles() {
 		// TODO Auto-generated method stub
 		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("["+directory+"] is the root directory for this operation: \n");
 		System.out.println("All files names available in ["+directory+"] directory are as follows: \n");
 		try {
 			for (File file : files) {
@@ -37,6 +38,7 @@ public class BusinessOperations implements FileInterface {
 	public void addFile() {
 		// TODO Auto-generated method stub
 		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("["+directory+"] is the root directory for this operation: \n");
 		System.out.println("Enter the text format file (.txt) name which you want to add in ["+directory+"] directory:");
 		Scanner sc2=new Scanner(System.in);
 		String filename=sc2.nextLine();
@@ -80,6 +82,7 @@ public class BusinessOperations implements FileInterface {
 		// TODO Auto-generated method stub
 		Scanner sc3=new Scanner(System.in);
 		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("["+directory+"] is the root directory for this operation: \n");
 		System.out.println("Enter the file name in ["+directory+"] directory which you want to delete:");
 		String fileName=sc3.nextLine();
         File[] files=directory.listFiles();
@@ -113,6 +116,7 @@ public class BusinessOperations implements FileInterface {
 		// TODO Auto-generated method stub
 		Scanner sc4=new Scanner(System.in);
 		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("["+directory+"] is the root directory for this operation: \n");
 		System.out.println("Enter the file name in ["+directory+"] directory which you want to search:");
 		String fileName=sc4.nextLine();
         File[] files=directory.listFiles();
