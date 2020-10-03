@@ -1,5 +1,6 @@
 package operations;
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -53,7 +54,7 @@ public class BusinessOperations implements FileInterface {
 					(!F.exists() && F.getName().endsWith(".txT")) || (!F.getCanonicalFile().getName().equals(F.getName()) && F.getName().endsWith(".txT"))) {
 			F.createNewFile();
 				System.out.println(filename+" file is added to the directory");
-				//Desktop.getDesktop().edit(F); This will only work in Windows not in Linux
+				Desktop.getDesktop().edit(F); //This will only work in Windows not in Linux
 			} 
 			else if ((!F.exists() && !F.getName().endsWith(".txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".txt")) || 
 					(!F.exists() && !F.getName().endsWith(".Txt")) || (!F.getCanonicalFile().getName().equals(F.getName()) && !F.getName().endsWith(".Txt")) ||

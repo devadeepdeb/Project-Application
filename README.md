@@ -8,3 +8,10 @@ LockedMe
 <p>Features to accept the user input to select one of the 3 options listed.</p>
 <p>The first option returns the current file names in ascending order. The root directory can be either empty or contain few files or folders in it.</p>
 <img src="Images/1.PNG">
+<h1>Output 2</h1>
+<p>Business-level operations window:</p>
+<p>Option to add a user specified file to the application</p>
+<p>Option to delete a user specified file from the application</p>
+<p>Option to search a user specified file from the application</p>
+<p>Navigation option to close the current execution context and return to the main context</p>
+<img src="Images/2.PNG">
