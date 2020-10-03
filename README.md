@@ -51,6 +51,10 @@ LockedMe
 <p>   9b2) Option 2 -> Delete file -> return to 6b2) and continue.</p>
 <p>   9b3) Option 3 -> Search file -> return to 6b2) and continue.</p>
 <p>   9b4) Option 4 -> Return to 3) and continue.</p>
-<p>10) End
+<p>10) End</p>
 <h1>Application Flowchart</h1>
 <img src="Flowchart.PNG">
+<h1>Core Concepts</h1>
+<p>IDE : Eclipse Oxygen</p>
+<p>Java Version: 1.8</p>
+<p>Javs Concepts Used: Files, List, ArrayList, Interface, Static, Exception, If-else, Switch, Do-while, Scanner, Class, Function, Packages</p>
