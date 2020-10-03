@@ -32,5 +32,25 @@ LockedMe
 <h1>Output 7</h1>
 <p>Third option to close the main application</p>
 <img src="Images/7.PNG">
+<h1>Application Algorithm</h1>
+<p>1) Start</p>
+<p>2) Welcome Screen to Print Application, Developer Name</p>
+<p>3) Drive Menu comprising 3 Application options </p>
+<p>4) Declare Scanner object to accept Application Menu  and declare String options </p>
+<p>5) Is object value = 1,2,3?</p>
+<p>6a) If No, return to 3) and continue.</p>
+<p>6b) If Yes, Go to any step from 6b1)-6b3)</p>
+<p>   6b1) Option 1 -> Display files in ascending order -> return to 3) and continue.</p>
+<p>  6b2) Option 2 -> Business Operations comprising 4 options and go to 7)</p>
+<p>  6b3) Option 3 -> Go to 10) end</p>
+<p>7) Declare Scanner object to accept Business  Operations  and declare String options </p>
+<p>8) Is object value = 1,2,3,4?</p>
+<p>9a) If No, return to 6b2) and continue.</p>
+<p>9b) If Yes, Go to any step from 9b1)-9b4)</p>
+<p>   9b1) Option 1 -> Add file -> return to 6b2) and continue.</p>
+<p>   9b2) Option 2 -> Delete file -> return to 6b2) and continue.</p>
+<p>   9b3) Option 3 -> Search file -> return to 6b2) and continue.</p>
+<p>   9b4) Option 4 -> Return to 3) and continue.</p>
+<p>10) End
 <h1>Application Flowchart</h1>
 <img src="Flowchart.PNG">
