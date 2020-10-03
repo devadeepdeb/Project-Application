@@ -54,6 +54,10 @@ LockedMe
 <p>10) End</p>
 <h1>Application Flowchart</h1>
 <img src="Flowchart.PNG">
+<h1>Agile Framework</h1>
+<p>I have used Agile Scrum Methodology to deliver this Application taking 2 Sprints, considering 1 Sprint per week.</p>
+<p>In first week, I have created Welcome Page, FileInterface, AppMenu java files with modifications and compilations to test prototype.</p>
+<p>In second week, I have created BusinessOperations, AppMain java files with modifications, integrations and compilations to test final application for delivery.</p>
 <h1>Core Concepts</h1>
 <p>IDE : Eclipse Oxygen</p>
 <p>Java Compiler Version: 1.8</p>
