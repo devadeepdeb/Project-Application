@@ -26,3 +26,9 @@ LockedMe
 <p>Displayed the result upon successful operation</p>
 <p>Displayed the result upon unsuccessful operation</p>
 <img src="Images/5.PNG">
+<h1>Output 6</h1>
+<p>Option to navigate back to the main context from Business Level Operation</p>
+<img src="Images/6.PNG">
+<h1>Output 7</h1>
+<p>Third option to close the main application</p>
+<img src="Images/7.PNG">
