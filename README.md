@@ -1,5 +1,5 @@
 # Project-Application
-LockedMe
+LockedMe Application with hardcoded Root Directory to perform File Operations
 <h1>Project Overview</h1>
 <pre>
 LockedMe is an Application implementing File Generic features and three operations:
