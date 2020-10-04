@@ -1,5 +1,16 @@
 # Project-Application
 LockedMe
+Project Overview
+LockedMe is an Application implementing File Generic features and three operations: 
+<pre>
+1) Retrieving the file names in an ascending order
+2) Business-level operations:
+   a) Option to add a user specified file to the application
+   b) Option to delete a user specified file from the application
+   c) Option to search a user specified file from the application
+   d) Navigation option to close the current execution context and return to the main context
+3) Option to close the application
+</pre>
 <h1>Output</h1>
 <h3>Code to display the welcome screen. It should display:</h3>
 <h2>Output 1</h2>
