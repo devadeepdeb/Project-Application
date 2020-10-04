@@ -63,7 +63,7 @@ https://github.com/devadeepdeb/Project-Application
 <p>Option to delete a user specified text file from the application and it is following Case sensitivity for a file strictly to delete.</p>
 <img src="Images/12.PNG">
 <h2>Output 12</h2>
-<p>Option to search a user specified text file from the application and it is following Case sensitivity for a file strictly to search.</p>
+<p>Option to search a user specified text file alongwith content if applicable from the application and it is following Case sensitivity for a file strictly to search.</p>
 <img src="Images/13.PNG">
 <h1>Application Algorithm</h1>
 <pre>
