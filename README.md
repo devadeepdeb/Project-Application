@@ -76,7 +76,13 @@ https://github.com/devadeepdeb/Project-Application
 <p>In second week, I have created BusinessOperations, AppMain java files with modifications, integrations and compilations to test final application for delivery.</p>
 <h1>Core Concepts</h1>
 <p>IDE : Eclipse Oxygen</p>
+<p>Command Line Emulator Used: Git Bash</p>
+<p>Git repository hosting service: GitHub</p>
+<p>Operating System: Windows 10</p>
 <p>Java Compiler Version: 1.8</p>
 <p>Java Concepts Used: Files, List, ArrayList, Interface, Static, Exception, If-else, Switch, Do-while, Scanner, Class, Function, Packages</p>
+<h1>Data Structures</h1>
+<p>Sequential Search: In this, the list or array  (here a list of files) is traversed sequentially and every element is checked. In this application Linear Searching is used to search files in direcotories.</p>
+<p>Sorting: I have used arraylist.add() to get filenames via for-each loop to get them in increasing order.</p>
 <h1>Conclusion</h1>
 <p>Application can be enhanced further if it accepts user inputs to create directory to perform Business Operations rather than using hardcoded Root directory.</p>
