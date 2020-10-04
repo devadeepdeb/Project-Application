@@ -30,7 +30,7 @@ https://github.com/devadeepdeb/Project-Application
 <p>Navigation option to close the current execution context and return to the main context</p>
 <img src="Images/2.PNG">
 <h2>Output 3</h2>
-<p>Option to add a user specified file to the application and add contents to it.(Desktop.getDesktop().edit(file) opens the file for adding content on Notepad. It only works in Windows and not in linux OS).</p>
+<p>Option to add a user specified file to the application and add contents to it.(Desktop.getDesktop().edit(file) opens the file for adding content on Notepad. It only works in Windows and not in linux OS).Please comment (Desktop.getDesktop().edit(file) and remove dependent imported packages if you are testing in Linux OS.</p>
 <img src="Images/3.PNG">
 <h2>Output 4</h2>
 <p>Delete a user specified file from the existing directory list</p>
@@ -46,6 +46,25 @@ https://github.com/devadeepdeb/Project-Application
 <h2>Output 7</h2>
 <p>Third option to close the main application</p>
 <img src="Images/7.PNG">
+<h2>Output 8</h2>
+<p>Below is invalid option entered in main menu and it shows invalid input to user to proceed once again</p>
+<img src="Images/8.PNG">
+<h2>Output 9</h2>
+<p>Below is invalid option entered in Business operations menu and it shows invalid input to user to proceed once again</p>
+<img src="Images/9.PNG">
+<h2>Output 10</h2>
+<p>Below is invalid option entered in 2nd operation i.e. add new file in Business operations menu and if user enters invalid input to user to proceed once again in Business Operations Menu. Only text file is allowed for adding files.</p>
+<p>Note: Add new file is ignoring Case Sensitivity (e.g. if we enter abc.txt, Abc.txt both will be allowed to add. However only first created file will be observed in Root Directory if we are working on IDE in Windows in this case. Whereas both files will be allowed if work in IDE using Linux.)</p>
+<img src="Images/10.PNG">
+<h2>Output 11</h2>
+<p>Option to add a user specified text file to the application and add contents to it.(Desktop.getDesktop().edit(file) opens the file for adding content on Notepad. It only works in Windows and not in linux OS). Please comment (Desktop.getDesktop().edit(file) and remove dependent imported packages if you are testing in Linux OS.</p>
+<img src="Images/11.PNG">
+<h2>Output 12</h2>
+<p>Option to delete a user specified text file from the application and it is following Case sensitivity for a file strictly to delete.</p>
+<img src="Images/12.PNG">
+<h2>Output 12</h2>
+<p>Option to search a user specified text file from the application and it is following Case sensitivity for a file strictly to search.</p>
+<img src="Images/13.PNG">
 <h1>Application Algorithm</h1>
 <pre>
 1) Start
