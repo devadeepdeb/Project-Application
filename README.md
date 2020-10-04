@@ -73,7 +73,7 @@ https://github.com/devadeepdeb/Project-Application
 <h1>Agile Framework</h1>
 <p>I have used Agile Scrum Methodology to deliver this Application taking 2 Sprints, considering 1 Sprint per week.</p>
 <p>In first week, I have installed Eclipse IDE, Git Bash and created WelcomePage java file, FileInterface java file, AppMenu java file with modifications and compilations to test initial prototype in IDE.</p>
-<p>In second week, I have created Github account, BusinessOperations java file, AppMain java file with modifications, integrations and compilations to test final application for delivery and then pushed source code with documentation.</p>
+<p>In second week, I have created Github account, BusinessOperations java file, AppMain java file with modifications, integrations and compilations to test final application for delivery and then pushed source code to GitHub via Git Bash with documentation.</p>
 <h1>Core Concepts</h1>
 <p>IDE : Eclipse Oxygen</p>
 <p>Command Line Emulator Used: Git Bash 2.28.0 version</p>
